@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 160vh;
+    background-size: 100vw 140vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+   align-items: unset;
+   
+} 
+
+#scoreBox{
+
+       position: absolute;
+        top: 9px;
+        right: 200px;
+        font-size: 40px ;
+        font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+#highscoreBox{
+
+       position: absolute;
+        top: 79px;
+        right: 160px;
+        font-size: 40px ;
+        font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+#board{
+
+       background:linear-gradient(rgb(0, 128, 64) , rgb(247, 247, 90));
+       width: 90vmin;
+       height: 92vmin;
+       margin-top: 20px;
+       
+       border: 2px solid black;
+       display: grid;
+       grid-template-rows: repeat(18, 1fr );
+       grid-template-columns: repeat(18, 1fr );
+}
+
+.head{
+         background: linear-gradient(red,yellow);
+         border: 2px solid purple;
+         transform: scale(1.02);
+         border-radius: 9px;
+}
+
+.snake{
+       background-color:purple;
+       border: .25vmin solid white;
+       border-radius: 12px;
+}
+
+
+.food{
+       background: linear-gradient(red,purple);
+       border: .25vmin solid black; 
+       border-radius: 12px;
+       
+}
